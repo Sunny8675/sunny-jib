@@ -2,6 +2,6 @@ FROM java:8
 VOLUME /tmp
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-ADD target/sunny-jib-0.0.1.jar sunny-jib.jar
+COPY target/sunny-jib-0.0.1.jar /usr/src/sunny-jib.jar
 ENV JAVA_OPTS=""
-ENTRYPOINT ["java","-jar","/sunny-jib.jar"]
+ENTRYPOINT ["java","-jar","/usr/src/sunny-jib.jar"]
