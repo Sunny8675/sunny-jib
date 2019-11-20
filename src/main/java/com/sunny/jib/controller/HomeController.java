@@ -3,6 +3,8 @@ package com.sunny.jib.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalDateTime;
+
 @RestController
 public class HomeController {
 
@@ -12,8 +14,8 @@ public class HomeController {
     }
 
     @RequestMapping("/index")
-    public String index() {
-        return "Hello Sunny";
+    public LocalDateTime index() {
+        return LocalDateTime.now();
     }
 
 }
