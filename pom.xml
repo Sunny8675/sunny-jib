@@ -52,18 +52,23 @@
                 <version>1.0.0</version>
                 <configuration>
                     <from>
-                        <image>registry.cn-hangzhou.aliyuncs.com/aliyun-sunny/test:0.0.1</image>
+                        <image>openjdk:alpine</image>
+                        <!--<image>registry.cn-hangzhou.aliyuncs.com/aliyun-sunny/test:0.0.1</image>
                         <auth>
-                            <username>sunny8675@163.com</username><!--阿里云登录用户名-->
-                            <password>sunny8675</password><!--阿里云容器管理页面设置的Registry登录密码-->
-                        </auth>
+                            <username>sunny8675@163.com</username>&lt;!&ndash;阿里云登录用户名&ndash;&gt;
+                            <password>sunny8675</password>&lt;!&ndash;阿里云容器管理页面设置的Registry登录密码&ndash;&gt;
+                        </auth>-->
                     </from>
                     <to>
-                        <image>registry.cn-hangzhou.aliyuncs.com/aliyun-sunny/test:0.0.1</image>
+                        <image>registry.cn-shenzhen.aliyuncs.com/aliyun-sunny/sunnyjib:0.0.1</image>
                         <auth>
                             <username>sunny8675@163.com</username><!--阿里云登录用户名-->
                             <password>sunny8675</password><!--阿里云容器管理页面设置的Registry登录密码-->
                         </auth>
+                        <!--<tags>
+                            <tag>tag</tag>
+                            <tag>latest</tag>
+                        </tags>-->
                     </to>
                 </configuration>
                 <executions>
