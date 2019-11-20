@@ -8,10 +8,12 @@
         <version>2.2.1.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>com.sunny</groupId>
-    <artifactId>sunnyJib</artifactId>
+    <artifactId>sunny-jib</artifactId>
     <version>0.0.1</version>
-    <name>sunnyJib</name>
+    <packaging>jar</packaging>
+    <name>sunny-jib</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
