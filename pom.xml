@@ -11,8 +11,7 @@
 
     <groupId>com.sunny</groupId>
     <artifactId>sunny-jib</artifactId>
-    <version>0.0.1</version>
-    <packaging>jar</packaging>
+    <version>0.0.2</version>
     <name>sunny-jib</name>
     <description>Demo project for Spring Boot</description>
 
@@ -46,29 +45,27 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
 
+            <!--构建方式：再命令行执行mvn compile jib:build-->
             <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
-                <version>1.0.0</version>
+                <version>1.7.0</version>
                 <configuration>
+                    <!--from:表示本镜像构建所基于的根镜像为openjdk:alpine-->
                     <from>
                         <image>openjdk:alpine</image>
-                        <!--<image>registry.cn-hangzhou.aliyuncs.com/aliyun-sunny/test:0.0.1</image>
-                        <auth>
-                            <username>sunny8675@163.com</username>&lt;!&ndash;阿里云登录用户名&ndash;&gt;
-                            <password>sunny8675</password>&lt;!&ndash;阿里云容器管理页面设置的Registry登录密码&ndash;&gt;
-                        </auth>-->
                     </from>
+                    <!--to:表示本镜像构建完成后，要发布到哪里去。-->
                     <to>
-                        <image>registry.cn-shenzhen.aliyuncs.com/aliyun-sunny/sunnyjib:0.0.1</image>
+                        <image>registry.cn-shenzhen.aliyuncs.com/aliyun-sunny/sunny-jib</image>
                         <auth>
                             <username>sunny8675@163.com</username><!--阿里云登录用户名-->
                             <password>sunny8675</password><!--阿里云容器管理页面设置的Registry登录密码-->
                         </auth>
-                        <!--<tags>
-                            <tag>tag</tag>
-                            <tag>latest</tag>
-                        </tags>-->
+                        <!--tags配置镜像的版本-->
+                        <tags>
+                            <tag>0.0.2</tag>
+                        </tags>
                     </to>
                 </configuration>
                 <executions>
