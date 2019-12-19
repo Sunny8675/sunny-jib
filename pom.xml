@@ -57,10 +57,11 @@
                     </from>
                     <!--to:表示本镜像构建完成后，要发布到哪里去。-->
                     <to>
-                        <image>registry.cn-shenzhen.aliyuncs.com/aliyun-sunny/sunny-jib</image>
+                        <!--<image>docker.io/sunny8675/sunny-jib</image>--><!--docker hub仓库地址-->
+                        <image>registry.cn-hangzhou.aliyuncs.com/aliyun-sunny/jib</image><!--aliyun仓库地址-->
                         <auth>
-                            <username>sunny8675@163.com</username><!--阿里云登录用户名-->
-                            <password>sunny8675</password><!--阿里云容器管理页面设置的Registry登录密码-->
+                            <username>sunny8675@163.com</username><!--登录用户名-->
+                            <password>sunny8675</password><!--密码，阿里云为容器管理页面设置的Registry登录密码；docker hub为登录密码-->
                         </auth>
                         <!--tags配置镜像的版本-->
                         <tags>
