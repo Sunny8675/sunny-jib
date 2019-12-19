@@ -11,7 +11,7 @@
 
     <groupId>com.sunny</groupId>
     <artifactId>sunny-jib</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.1</version>
     <name>sunny-jib</name>
     <description>Demo project for Spring Boot</description>
 
@@ -65,7 +65,7 @@
                         </auth>
                         <!--tags配置镜像的版本-->
                         <tags>
-                            <tag>0.0.2</tag>
+                            <tag>0.0.1</tag>
                         </tags>
                     </to>
                 </configuration>
